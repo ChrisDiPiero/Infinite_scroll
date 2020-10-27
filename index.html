@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinite Image scroll</title>
-    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--  Title  -->
     <h1>Unsplash API - Infinite Scroll</h1>
     <!-- Loader -->
-    <div class="loader" id="loader">
-        <img src="/images/Infinity-4.5s-200px.svg" alt="">
+    <div class="loader" id="loader" hidden>
+        <img src="images/Infinity-4.5s-200px.svg" alt="Loading. There's supposed to be a loader image, but I guess it's broken.">
+    </div>
+    <!-- Image Container -->
+    <div class="image-container" id="image-container">   
     </div>
     <!-- Script -->
     <script src="script.js"></script>
